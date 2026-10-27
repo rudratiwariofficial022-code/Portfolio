@@ -3,573 +3,496 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Rudra Harikesh Tiwari - AI/ML Student at NST ADYPU, Aspiring AI Engineer, Developer, and IIT Bombay Techfest Campus Ambassador 2026–27.">
+  <meta name="description" content="Portfolio of Rudra Harikesh Tiwari — AI/ML Student at NST ADYPU, Aspiring AI Engineer, and IIT Bombay Techfest Campus Ambassador 2026–27.">
   <meta name="author" content="Rudra Harikesh Tiwari">
-  <meta name="theme-color" content="#07090e">
+  <meta name="theme-color" content="#05070d">
   <title>Rudra Harikesh Tiwari | AI/ML Student & Developer</title>
 
-  <!-- Google Font: Inter & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Core Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Ambient Background Lighting (Pure CSS) -->
-  <div class="ambient-glow ambient-glow-1" aria-hidden="true"></div>
-  <div class="ambient-glow ambient-glow-2" aria-hidden="true"></div>
-  <div class="grid-overlay" aria-hidden="true"></div>
+  <!-- ═══════════════════════════════════════════════════════════════
+       GLOBAL BACKGROUNDS
+  ═══════════════════════════════════════════════════════════════════ -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-noise" aria-hidden="true"></div>
 
-  <!-- Accessibility Skip Link -->
+  <!-- Ambient Orbs -->
+  <div class="orb orb-1" aria-hidden="true"></div>
+  <div class="orb orb-2" aria-hidden="true"></div>
+  <div class="orb orb-3" aria-hidden="true"></div>
+
+  <!-- Floating Particles (CSS only) -->
+  <div class="particles" aria-hidden="true">
+    <span class="particle p1"></span><span class="particle p2"></span>
+    <span class="particle p3"></span><span class="particle p4"></span>
+    <span class="particle p5"></span><span class="particle p6"></span>
+    <span class="particle p7"></span><span class="particle p8"></span>
+    <span class="particle p9"></span><span class="particle p10"></span>
+    <span class="particle p11"></span><span class="particle p12"></span>
+  </div>
+
+  <!-- Skip Link -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- =========================================================================
-       NAVIGATION BAR (Pure HTML & CSS Responsive Menu)
-       ========================================================================= -->
+  <!-- ═══════════════════════════════════════════════════════════════
+       NAV
+  ═══════════════════════════════════════════════════════════════════ -->
   <header class="site-header">
+    <div class="header-glow" aria-hidden="true"></div>
     <nav class="nav-container" aria-label="Main Navigation">
-      <!-- Brand Wordmark -->
-      <a href="#hero" class="nav-brand" aria-label="Rudra Harikesh Tiwari - Home">
-        <span class="brand-monogram">RT</span>
-        <span class="brand-name">Rudra<span class="brand-dot">.</span>Tiwari</span>
+
+      <a href="#hero" class="nav-brand" aria-label="Rudra Tiwari – Home">
+        <div class="brand-logo">
+          <span class="logo-letter">R</span>
+          <span class="logo-letter">T</span>
+        </div>
+        <span class="brand-name">Rudra<span class="brand-dot">.</span></span>
       </a>
 
-      <!-- CSS-only Mobile Navigation Toggle Checkbox -->
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle Navigation Menu">
-      <label for="nav-toggle" class="nav-toggle-btn" aria-label="Open menu">
-        <span class="hamburger-bar"></span>
-        <span class="hamburger-bar"></span>
-        <span class="hamburger-bar"></span>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-btn" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
       </label>
 
-      <!-- Navigation Links -->
       <div class="nav-menu">
         <ul class="nav-list">
-          <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
-          <li class="nav-item"><a href="#achievements" class="nav-link">Milestones</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#hero"        class="nav-link"><span class="nl-num">01.</span> Home</a></li>
+          <li><a href="#about"       class="nav-link"><span class="nl-num">02.</span> About</a></li>
+          <li><a href="#skills"      class="nav-link"><span class="nl-num">03.</span> Skills</a></li>
+          <li><a href="#projects"    class="nav-link"><span class="nl-num">04.</span> Projects</a></li>
+          <li><a href="#experience"  class="nav-link"><span class="nl-num">05.</span> Journey</a></li>
+          <li><a href="#contact"     class="nav-link"><span class="nl-num">06.</span> Contact</a></li>
         </ul>
-        <div class="nav-cta-wrapper">
-          <a href="#contact" class="btn btn-sm btn-primary">Let's Connect</a>
-        </div>
+        <a href="#contact" class="btn btn-nav-cta">
+          <span class="btn-cta-shine"></span>Let's Connect
+        </a>
       </div>
+
     </nav>
   </header>
 
-  <!-- =========================================================================
-       MAIN CONTENT CONTAINER
-       ========================================================================= -->
+  <!-- ═══════════════════════════════════════════════════════════════
+       MAIN
+  ═══════════════════════════════════════════════════════════════════ -->
   <main id="main-content">
 
-    <!-- =======================================================================
-         HERO SECTION
-         ======================================================================= -->
+    <!-- ─────────────────────────────────────────────────────────────
+         HERO
+    ───────────────────────────────────────────────────────────────── -->
     <section id="hero" class="hero-section">
-      <div class="container hero-container">
-        
-        <!-- Hero Left Column: Narrative & Actions -->
+
+      <!-- Scanlines overlay -->
+      <div class="hero-scanlines" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+
+        <!-- LEFT: Text -->
         <div class="hero-content">
-          <!-- Status Pill -->
-          <div class="status-pill">
-            <span class="status-pulse" aria-hidden="true"></span>
-            <span class="status-text">AI/ML STUDENT • DEVELOPER • TECH ENTHUSIAST</span>
+
+          <!-- Greeting line -->
+          <div class="hero-greeting">
+            <span class="greeting-line"></span>
+            <span class="greeting-text">Hello, World! I'm</span>
           </div>
 
-          <!-- Main Headline -->
-          <h1 class="hero-title">
-            Turning Ideas Into <span class="gradient-text">Intelligent Solutions</span>.
+          <!-- Name -->
+          <h1 class="hero-name">
+            Rudra<br>
+            <span class="name-accent">Tiwari</span>
           </h1>
 
-          <!-- Supporting Text -->
-          <p class="hero-description">
-            I'm <strong class="text-highlight">Rudra Harikesh Tiwari</strong>, an AI/ML student passionate about technology, intelligent applications, and solving real-world problems through code.
+          <!-- Roles — CSS typewriter cycle -->
+          <div class="hero-roles" aria-label="AI/ML Student, Developer, Tech Enthusiast">
+            <span class="role-prefix">I build &nbsp;</span>
+            <span class="typewriter-wrap">
+              <span class="typewriter">
+                <span class="tw-word">Intelligent Systems</span>
+                <span class="tw-word">AI Applications</span>
+                <span class="tw-word">Web Experiences</span>
+                <span class="tw-word">Real-World Tools</span>
+              </span>
+            </span>
+          </div>
+
+          <p class="hero-desc">
+            An <strong>AI/ML student</strong> at NST ADYPU passionate about intelligent applications,
+            hackathons, and engineering solutions that matter. Campus Ambassador for
+            <span class="text-glow">IIT Bombay Techfest 2026–27</span>.
           </p>
 
-          <!-- Call-To-Action Buttons -->
-          <div class="hero-actions">
+          <!-- CTAs -->
+          <div class="hero-btns">
             <a href="#projects" class="btn btn-primary">
-              <span>Explore My Work</span>
-              <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
-              </svg>
+              <span class="btn-bg"></span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3 12h18M13 6l6 6-6 6"/></svg>
+              Explore My Work
             </a>
-            <a href="#contact" class="btn btn-secondary">
-              <span>Contact Me</span>
+            <a href="#contact" class="btn btn-ghost">
+              <span>Let's Connect</span>
+              <span class="btn-ghost-dot"></span>
             </a>
           </div>
 
-          <!-- Social Links Row (Configurable Placeholders) -->
+          <!-- Social row -->
           <div class="hero-socials">
-            <span class="socials-label">Connect:</span>
-            <!-- GitHub Link Placeholder: Replace URL with your actual profile -->
-            <a href="https://github.com/your-username" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile (Placeholder)">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-              </svg>
+            <!-- ⚠ Replace with your real URLs -->
+            <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="GitHub Profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
               <span>GitHub</span>
             </a>
-            <!-- LinkedIn Link Placeholder: Replace URL with your actual profile -->
-            <a href="https://linkedin.com/in/your-profile" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile (Placeholder)">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                <rect x="2" y="9" width="4" height="12"/>
-                <circle cx="4" cy="4" r="2"/>
-              </svg>
+            <span class="social-divider" aria-hidden="true">·</span>
+            <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn Profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
               <span>LinkedIn</span>
             </a>
-            <!-- Email Link Placeholder: Replace email address with your actual email -->
-            <a href="mailto:your.email@example.com" class="social-link" aria-label="Send an email to Rudra Harikesh Tiwari">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <rect width="20" height="16" x="2" y="4" rx="2"/>
-                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-              </svg>
+            <span class="social-divider" aria-hidden="true">·</span>
+            <!-- ⚠ Replace with your real email -->
+            <a href="mailto:your.email@example.com" class="social-icon-link" aria-label="Send Email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
               <span>Email</span>
             </a>
           </div>
+
         </div>
 
-        <!-- Hero Right Column: Pure CSS Neural Network / AI Graphic -->
-        <div class="hero-visual-wrapper" aria-hidden="true">
-          <div class="neural-display">
-            <!-- Terminal Header -->
-            <div class="neural-header">
-              <div class="terminal-dots">
-                <span class="dot dot-red"></span>
-                <span class="dot dot-amber"></span>
-                <span class="dot dot-green"></span>
-              </div>
-              <span class="neural-tag">NEURAL_NET_TOPOLOGY // V2.0</span>
+        <!-- RIGHT: Terminal / Code Panel -->
+        <div class="hero-panel" aria-hidden="true">
+
+          <!-- Floating corner decorations -->
+          <span class="panel-corner pc-tl"></span>
+          <span class="panel-corner pc-tr"></span>
+          <span class="panel-corner pc-bl"></span>
+          <span class="panel-corner pc-br"></span>
+
+          <div class="panel-header">
+            <div class="panel-dots">
+              <span class="pd red"></span>
+              <span class="pd amber"></span>
+              <span class="pd green"></span>
             </div>
-
-            <!-- Interactive CSS Neural Network Topology -->
-            <div class="neural-network">
-              
-              <!-- Layer 1: Input Layer -->
-              <div class="neural-layer layer-input">
-                <div class="node-caption">INPUTS</div>
-                <div class="neural-node node-in-1" data-label="Data">
-                  <span class="node-core"></span>
-                  <span class="node-ring"></span>
-                </div>
-                <div class="neural-node node-in-2" data-label="Vision">
-                  <span class="node-core"></span>
-                  <span class="node-ring"></span>
-                </div>
-                <div class="neural-node node-in-3" data-label="Logic">
-                  <span class="node-core"></span>
-                  <span class="node-ring"></span>
-                </div>
-              </div>
-
-              <!-- Connecting Synapses (CSS Flow Lines) -->
-              <div class="neural-synapses">
-                <div class="synapse-line syn-1"></div>
-                <div class="synapse-line syn-2"></div>
-                <div class="synapse-line syn-3"></div>
-                <div class="synapse-line syn-4"></div>
-              </div>
-
-              <!-- Layer 2: Hidden Dense Layer -->
-              <div class="neural-layer layer-hidden">
-                <div class="node-caption">WEIGHTS</div>
-                <div class="neural-node node-h-1" data-label="h1">
-                  <span class="node-core"></span>
-                  <span class="node-ring"></span>
-                </div>
-                <div class="neural-node node-h-2" data-label="h2">
-                  <span class="node-core"></span>
-                  <span class="node-ring"></span>
-                </div>
-                <div class="neural-node node-h-3" data-label="h3">
-                  <span class="node-core"></span>
-                  <span class="node-ring"></span>
-                </div>
-                <div class="neural-node node-h-4" data-label="h4">
-                  <span class="node-core"></span>
-                  <span class="node-ring"></span>
-                </div>
-              </div>
-
-              <!-- Synapses to Output -->
-              <div class="neural-synapses">
-                <div class="synapse-line syn-5"></div>
-                <div class="synapse-line syn-6"></div>
-                <div class="synapse-line syn-7"></div>
-              </div>
-
-              <!-- Layer 3: Output Layer -->
-              <div class="neural-layer layer-output">
-                <div class="node-caption">OUTPUT</div>
-                <div class="neural-node node-out-1" data-label="Impact">
-                  <span class="node-core"></span>
-                  <span class="node-ring"></span>
-                </div>
-                <div class="neural-node node-out-2" data-label="Action">
-                  <span class="node-core"></span>
-                  <span class="node-ring"></span>
-                </div>
-              </div>
-
-            </div>
-
-            <!-- Telemetry Footer -->
-            <div class="neural-telemetry">
-              <div class="telemetry-item">
-                <span class="telemetry-label">Architecture</span>
-                <span class="telemetry-value">Deep Neural Synthesis</span>
-              </div>
-              <div class="telemetry-item">
-                <span class="telemetry-label">Core Focus</span>
-                <span class="telemetry-value text-accent">Real-World Utility</span>
-              </div>
-            </div>
-
+            <span class="panel-title">rudra_ai.py</span>
+            <span class="panel-status">
+              <span class="run-dot"></span> running
+            </span>
           </div>
+
+          <div class="panel-code">
+            <div class="code-line"><span class="c-kw">import</span> <span class="c-mod">intelligence</span></div>
+            <div class="code-line"><span class="c-kw">from</span> <span class="c-mod">curiosity</span> <span class="c-kw">import</span> <span class="c-fn">build</span></div>
+            <div class="code-line code-blank"></div>
+            <div class="code-line">
+              <span class="c-kw">class</span> <span class="c-cls">Rudra</span><span class="c-punc">:</span>
+            </div>
+            <div class="code-line code-indent">
+              <span class="c-fn">role</span> <span class="c-op">=</span> <span class="c-str">"AI/ML Student"</span>
+            </div>
+            <div class="code-line code-indent">
+              <span class="c-fn">college</span> <span class="c-op">=</span> <span class="c-str">"NST ADYPU"</span>
+            </div>
+            <div class="code-line code-indent">
+              <span class="c-fn">mission</span> <span class="c-op">=</span> <span class="c-str">"Solve real problems"</span>
+            </div>
+            <div class="code-line code-blank"></div>
+            <div class="code-line code-indent">
+              <span class="c-kw">def</span> <span class="c-fn">skills</span><span class="c-punc">(self):</span>
+            </div>
+            <div class="code-line code-indent2">
+              <span class="c-kw">return</span> <span class="c-punc">[</span>
+            </div>
+            <div class="code-line code-indent3">
+              <span class="c-str">"Python"</span><span class="c-punc">,</span> <span class="c-str">"React"</span><span class="c-punc">,</span>
+            </div>
+            <div class="code-line code-indent3">
+              <span class="c-str">"TypeScript"</span><span class="c-punc">,</span>
+            </div>
+            <div class="code-line code-indent3">
+              <span class="c-str">"Supabase"</span><span class="c-punc">,</span> <span class="c-str">"AI/ML"</span>
+            </div>
+            <div class="code-line code-indent2"><span class="c-punc">]</span></div>
+            <div class="code-line code-blank"></div>
+            <div class="code-line code-comment"># Flagship project ↓</div>
+            <div class="code-line code-indent">
+              <span class="c-fn">project</span> <span class="c-op">=</span> <span class="c-cls">RapidReach</span><span class="c-punc">()</span>
+            </div>
+            <div class="code-line code-blank"></div>
+            <div class="code-line output-line">
+              <span class="c-sym">»</span> <span class="c-out">Initializing </span><span class="c-cls">Rudra</span><span class="c-out">...</span><span class="cursor-blink">▌</span>
+            </div>
+          </div>
+
+          <!-- Bottom metrics bar -->
+          <div class="panel-metrics">
+            <div class="metric">
+              <span class="metric-dot" style="background:#34d399"></span>
+              <span class="metric-label">Python</span>
+            </div>
+            <div class="metric">
+              <span class="metric-dot" style="background:#38bdf8"></span>
+              <span class="metric-label">TypeScript</span>
+            </div>
+            <div class="metric">
+              <span class="metric-dot" style="background:#a78bfa"></span>
+              <span class="metric-label">AI/ML</span>
+            </div>
+            <div class="metric ml-auto">
+              <span class="metric-label">v2.0</span>
+            </div>
+          </div>
+
         </div>
 
       </div>
 
-      <!-- Subtle Scroll Down Indicator -->
-      <a href="#about" class="scroll-indicator" aria-label="Scroll down to About section">
-        <span class="scroll-mouse">
-          <span class="scroll-wheel"></span>
-        </span>
-        <span class="scroll-label">EXPLORE</span>
+      <!-- Scroll indicator -->
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+        <span class="scroll-track"><span class="scroll-thumb"></span></span>
+        <span class="scroll-words">scroll</span>
       </a>
+
     </section>
 
-    <!-- =======================================================================
-         ABOUT ME SECTION
-         ======================================================================= -->
+    <!-- ─────────────────────────────────────────────────────────────
+         ABOUT
+    ───────────────────────────────────────────────────────────────── -->
     <section id="about" class="section about-section">
       <div class="container">
-        
-        <!-- Section Header -->
-        <div class="section-header">
-          <span class="section-tag">INTRODUCTION</span>
-          <h2 class="section-title">About Me</h2>
-          <p class="section-subtitle">
-            Bridging foundational artificial intelligence with modern software development to engineer practical solutions.
-          </p>
+
+        <div class="section-label">
+          <span class="sl-line"></span>
+          <span class="sl-tag">/ about me</span>
         </div>
+        <h2 class="section-h">Building at the Intersection of<br><span class="gradient-text">AI and Real Impact</span></h2>
 
         <div class="about-grid">
-          
-          <!-- Narrative Column -->
-          <div class="about-text-column">
-            <h3 class="about-heading">Curious Mind, Practical Engineer</h3>
-            <p class="about-paragraph">
-              I am an Artificial Intelligence and Machine Learning student at <strong class="text-light">NST ADYPU</strong> with a passion for software engineering, algorithmic problem-solving, and building applications that make a tangible difference.
+
+          <!-- Story -->
+          <div class="about-story">
+            <p class="story-lead">
+              I'm an Artificial Intelligence and Machine Learning student at <strong>NST ADYPU</strong> — deeply passionate about engineering software that makes a tangible difference.
             </p>
-            <p class="about-paragraph">
-              My technical journey is centered on mastering foundational AI/ML methodologies while developing scalable, user-centric software. I actively participate in hackathons and collaborative development sprints, where rapid iteration and creative problem-solving are essential.
+            <p class="story-body">
+              My journey blends theoretical AI/ML foundations with hands-on software development. I thrive in hackathon environments where rapid iteration, creative problem-solving, and cross-disciplinary collaboration push ideas from concept to prototype within hours.
             </p>
-            <p class="about-paragraph">
-              I believe technology reaches its highest value when applied to solve real problems—from public safety and rapid emergency coordination to intelligent automation that simplifies complex workflows.
+            <p class="story-body">
+              My flagship project, <strong class="text-glow">RapidReach</strong>, reflects my belief that technology's highest value lies in solving urgent human problems — in this case, emergency assistance and SOS coordination.
             </p>
 
-            <!-- Focus Interest Cards -->
-            <div class="interest-grid">
-              <div class="interest-card">
-                <div class="interest-icon-box" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-                  </svg>
-                </div>
-                <div>
-                  <h4 class="interest-title">AI & Machine Learning</h4>
-                  <p class="interest-desc">Exploring algorithms, neural models, and intelligent application design.</p>
-                </div>
+            <!-- Interest cards -->
+            <div class="interest-row">
+              <div class="interest-chip">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/><circle cx="12" cy="12" r="3"/></svg>
+                AI & Machine Learning
               </div>
-
-              <div class="interest-card">
-                <div class="interest-icon-box" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="16 18 22 12 16 6"/>
-                    <polyline points="8 6 2 12 8 18"/>
-                  </svg>
-                </div>
-                <div>
-                  <h4 class="interest-title">Modern Web Development</h4>
-                  <p class="interest-desc">Creating fast, responsive, and resilient user interfaces using React and modern tools.</p>
-                </div>
+              <div class="interest-chip">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                Modern Web Dev
               </div>
-
-              <div class="interest-card">
-                <div class="interest-icon-box" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-                  </svg>
-                </div>
-                <div>
-                  <h4 class="interest-title">Hackathons & Sprints</h4>
-                  <p class="interest-desc">Thriving in high-energy collaborative environments to prototype rapidly under constraints.</p>
-                </div>
+              <div class="interest-chip">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                Hackathons
               </div>
-
-              <div class="interest-card">
-                <div class="interest-icon-box" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                  </svg>
-                </div>
-                <div>
-                  <h4 class="interest-title">Real-World Social Impact</h4>
-                  <p class="interest-desc">Designing emergency assistance and public utility applications that protect and empower communities.</p>
-                </div>
+              <div class="interest-chip">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                Social Impact Tech
+              </div>
+              <div class="interest-chip">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                Open Source
               </div>
             </div>
           </div>
 
-          <!-- Profile Snapshot Card -->
-          <div class="about-card-column">
+          <!-- Profile card -->
+          <div class="profile-card-wrap">
             <div class="profile-card">
-              <div class="profile-card-header">
-                <div class="profile-avatar">
+              <div class="pc-glowing-border"></div>
+
+              <div class="pc-avatar">
+                <div class="avatar-ring av-r1"></div>
+                <div class="avatar-ring av-r2"></div>
+                <div class="avatar-inner">
                   <span class="avatar-initials">RT</span>
                 </div>
-                <div class="profile-header-meta">
-                  <h3 class="profile-name">Rudra Harikesh Tiwari</h3>
-                  <p class="profile-role">AI/ML Student & Developer</p>
+              </div>
+
+              <div class="pc-name">Rudra Harikesh Tiwari</div>
+              <div class="pc-role">AI/ML Student & Developer</div>
+
+              <div class="pc-stats">
+                <div class="pc-stat">
+                  <span class="pc-stat-val">NST</span>
+                  <span class="pc-stat-key">ADYPU</span>
+                </div>
+                <div class="pc-stat-divider"></div>
+                <div class="pc-stat">
+                  <span class="pc-stat-val">AI/ML</span>
+                  <span class="pc-stat-key">Field</span>
+                </div>
+                <div class="pc-stat-divider"></div>
+                <div class="pc-stat">
+                  <span class="pc-stat-val">2026</span>
+                  <span class="pc-stat-key">Techfest</span>
                 </div>
               </div>
 
-              <div class="profile-card-body">
-                <div class="info-row">
-                  <span class="info-label">Institution</span>
-                  <span class="info-value">NST ADYPU</span>
+              <div class="pc-rows">
+                <div class="pc-row">
+                  <span class="pc-key">Institution</span>
+                  <span class="pc-val">NST ADYPU</span>
                 </div>
-
-                <div class="info-row">
-                  <span class="info-label">Field of Study</span>
-                  <span class="info-value">Artificial Intelligence & Machine Learning</span>
+                <div class="pc-row">
+                  <span class="pc-key">Field</span>
+                  <span class="pc-val">Artificial Intelligence & ML</span>
                 </div>
-
-                <div class="info-row">
-                  <span class="info-label">Primary Role</span>
-                  <span class="info-value">AI/ML Student | Aspiring AI Engineer</span>
+                <div class="pc-row">
+                  <span class="pc-key">Role</span>
+                  <span class="pc-val">AI/ML Student | Aspiring AI Eng.</span>
                 </div>
-
-                <div class="info-row highlight-row">
-                  <span class="info-label">Campus Leadership</span>
-                  <span class="info-value text-accent font-semibold">IIT Bombay Techfest Campus Ambassador 2026–27</span>
+                <div class="pc-row pc-row-accent">
+                  <span class="pc-key">Ambassador</span>
+                  <span class="pc-val glow-text">IIT Bombay Techfest '26–'27</span>
                 </div>
-
-                <div class="info-row">
-                  <span class="info-label">Flagship Project</span>
-                  <span class="info-value">RapidReach (Emergency Assistance)</span>
-                </div>
-
-                <div class="info-row">
-                  <span class="info-label">Core Tech Focus</span>
-                  <span class="info-value">Python, React, Vite, TypeScript, Supabase</span>
+                <div class="pc-row">
+                  <span class="pc-key">Project</span>
+                  <span class="pc-val">RapidReach</span>
                 </div>
               </div>
 
-              <div class="profile-card-footer">
-                <div class="profile-status-badge">
-                  <span class="badge-dot" aria-hidden="true"></span>
-                  <span>Active Student & Builder</span>
-                </div>
-                <a href="#contact" class="btn btn-outline btn-block">Get In Touch</a>
+              <div class="pc-badge">
+                <span class="pc-badge-dot"></span>
+                Open to collaborations
               </div>
             </div>
           </div>
 
         </div>
-
       </div>
     </section>
 
-    <!-- =======================================================================
-         TECHNICAL SKILLS SECTION
-         ======================================================================= -->
+    <!-- ─────────────────────────────────────────────────────────────
+         SKILLS
+    ───────────────────────────────────────────────────────────────── -->
     <section id="skills" class="section skills-section">
       <div class="container">
-        
-        <!-- Section Header -->
-        <div class="section-header">
-          <span class="section-tag">CAPABILITIES</span>
-          <h2 class="section-title">Technical Skills</h2>
-          <p class="section-subtitle">
-            An authentic inventory of languages, frameworks, and developer tools applied in my active projects and coursework.
-          </p>
+
+        <div class="section-label">
+          <span class="sl-line"></span>
+          <span class="sl-tag">/ technical skills</span>
         </div>
+        <h2 class="section-h">What I Work With</h2>
 
-        <!-- Skills Grid -->
-        <div class="skills-grid">
-          
-          <!-- Category 1: Programming -->
-          <div class="skill-category-card">
-            <div class="category-header">
-              <div class="category-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="16 18 22 12 16 6"/>
-                  <polyline points="8 6 2 12 8 18"/>
-                </svg>
-              </div>
-              <h3 class="category-title">Programming</h3>
+        <div class="skills-arena">
+
+          <!-- Category cards -->
+          <div class="skill-cat-card" style="--cat-color: #38bdf8;">
+            <div class="scc-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
             </div>
-            <p class="category-desc">Core languages used for data structures, problem-solving, and software logic.</p>
-            <ul class="skill-items-list">
-              <li class="skill-item">
-                <div class="skill-header">
-                  <span class="skill-name">Python</span>
-                  <span class="skill-tag">Primary</span>
-                </div>
-                <p class="skill-note">Core language for AI/ML foundations, scripting, and data algorithms.</p>
-              </li>
-              <li class="skill-item">
-                <div class="skill-header">
-                  <span class="skill-name">JavaScript</span>
-                  <span class="skill-tag">Fundamentals</span>
-                </div>
-                <p class="skill-note">Modern ES6+ syntax, asynchronous programming, and DOM interaction.</p>
-              </li>
-              <li class="skill-item">
-                <div class="skill-header">
-                  <span class="skill-name">TypeScript</span>
-                  <span class="skill-tag">Project Stack</span>
-                </div>
-                <p class="skill-note">Static typing and interface design utilized in the RapidReach application.</p>
-              </li>
-            </ul>
+            <h3 class="scc-title">Programming</h3>
+            <div class="scc-skills">
+              <div class="skill-pill">
+                <span class="sp-icon py-icon">Py</span>
+                <span class="sp-label">Python</span>
+                <span class="sp-badge">Primary</span>
+              </div>
+              <div class="skill-pill">
+                <span class="sp-icon js-icon">JS</span>
+                <span class="sp-label">JavaScript</span>
+                <span class="sp-badge">ES6+</span>
+              </div>
+              <div class="skill-pill">
+                <span class="sp-icon ts-icon">TS</span>
+                <span class="sp-label">TypeScript</span>
+                <span class="sp-badge">Project</span>
+              </div>
+            </div>
+            <div class="scc-glow" aria-hidden="true"></div>
           </div>
 
-          <!-- Category 2: Web Development -->
-          <div class="skill-category-card">
-            <div class="category-header">
-              <div class="category-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                  <line x1="8" y1="21" x2="16" y2="21"/>
-                  <line x1="12" y1="17" x2="12" y2="21"/>
-                </svg>
-              </div>
-              <h3 class="category-title">Web Development</h3>
+          <div class="skill-cat-card" style="--cat-color: #a78bfa;">
+            <div class="scc-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
             </div>
-            <p class="category-desc">Frontend frameworks and styling architecture for clean, accessible interfaces.</p>
-            <ul class="skill-items-list">
-              <li class="skill-item">
-                <div class="skill-header">
-                  <span class="skill-name">HTML5</span>
-                  <span class="skill-tag">Semantic</span>
-                </div>
-                <p class="skill-note">Semantic structure, document outline, accessibility attributes, and SEO.</p>
-              </li>
-              <li class="skill-item">
-                <div class="skill-header">
-                  <span class="skill-name">CSS3</span>
-                  <span class="skill-tag">Modern</span>
-                </div>
-                <p class="skill-note">CSS Grid, Flexbox, responsive viewports, keyframe animations, and variables.</p>
-              </li>
-              <li class="skill-item">
-                <div class="skill-header">
-                  <span class="skill-name">React</span>
-                  <span class="skill-tag">Project Stack</span>
-                </div>
-                <p class="skill-note">Component lifecycle, hooks, reactive UI state, and modular frontend components.</p>
-              </li>
-              <li class="skill-item">
-                <div class="skill-header">
-                  <span class="skill-name">Responsive Design</span>
-                  <span class="skill-tag">Standard</span>
-                </div>
-                <p class="skill-note">Mobile-first fluid layouts ensuring usability across handheld and desktop screens.</p>
-              </li>
-            </ul>
+            <h3 class="scc-title">Web & Frontend</h3>
+            <div class="scc-skills">
+              <div class="skill-pill">
+                <span class="sp-icon ht-icon">H5</span>
+                <span class="sp-label">HTML5</span>
+                <span class="sp-badge">Semantic</span>
+              </div>
+              <div class="skill-pill">
+                <span class="sp-icon cs-icon">C3</span>
+                <span class="sp-label">CSS3</span>
+                <span class="sp-badge">Modern</span>
+              </div>
+              <div class="skill-pill">
+                <span class="sp-icon re-icon">Re</span>
+                <span class="sp-label">React</span>
+                <span class="sp-badge">Hooks</span>
+              </div>
+            </div>
+            <div class="scc-glow" aria-hidden="true"></div>
           </div>
 
-          <!-- Category 3: AI & Machine Learning -->
-          <div class="skill-category-card">
-            <div class="category-header">
-              <div class="category-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="10"/>
-                  <path d="m4.93 4.93 4.24 4.24"/>
-                  <path d="m14.83 9.17 4.24-4.24"/>
-                  <path d="m14.83 14.83 4.24 4.24"/>
-                  <path d="m9.17 14.83-4.24 4.24"/>
-                  <circle cx="12" cy="12" r="3"/>
-                </svg>
-              </div>
-              <h3 class="category-title">AI & Machine Learning</h3>
+          <div class="skill-cat-card" style="--cat-color: #34d399;">
+            <div class="scc-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/><circle cx="12" cy="12" r="3"/></svg>
             </div>
-            <p class="category-desc">Theoretical foundations and practical techniques in artificial intelligence.</p>
-            <ul class="skill-items-list">
-              <li class="skill-item">
-                <div class="skill-header">
-                  <span class="skill-name">AI Fundamentals</span>
-                  <span class="skill-tag">Core Studies</span>
-                </div>
-                <p class="skill-note">Knowledge representation, search heuristics, decision trees, and intelligent agents.</p>
-              </li>
-              <li class="skill-item">
-                <div class="skill-header">
-                  <span class="skill-name">Machine Learning</span>
-                  <span class="skill-tag">Fundamentals</span>
-                </div>
-                <p class="skill-note">Supervised and unsupervised models, feature representation, and evaluation metrics.</p>
-              </li>
-              <li class="skill-item">
-                <div class="skill-header">
-                  <span class="skill-name">AI Application Development</span>
-                  <span class="skill-tag">Applied</span>
-                </div>
-                <p class="skill-note">Integrating algorithmic intelligence and data pipelines into working software.</p>
-              </li>
-            </ul>
+            <h3 class="scc-title">AI & Machine Learning</h3>
+            <div class="scc-skills">
+              <div class="skill-pill">
+                <span class="sp-icon ai-icon">AI</span>
+                <span class="sp-label">AI Fundamentals</span>
+                <span class="sp-badge">Core</span>
+              </div>
+              <div class="skill-pill">
+                <span class="sp-icon ml-icon">ML</span>
+                <span class="sp-label">Machine Learning</span>
+                <span class="sp-badge">Study</span>
+              </div>
+              <div class="skill-pill">
+                <span class="sp-icon ap-icon">↗</span>
+                <span class="sp-label">AI App Dev</span>
+                <span class="sp-badge">Applied</span>
+              </div>
+            </div>
+            <div class="scc-glow" aria-hidden="true"></div>
           </div>
 
-          <!-- Category 4: Tools & Backend -->
-          <div class="skill-category-card">
-            <div class="category-header">
-              <div class="category-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
-                </svg>
-              </div>
-              <h3 class="category-title">Tools & Backend</h3>
+          <div class="skill-cat-card" style="--cat-color: #fbbf24;">
+            <div class="scc-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
             </div>
-            <p class="category-desc">Development workflows, database infrastructure, and environment tooling.</p>
-            <ul class="skill-items-list">
-              <li class="skill-item">
-                <div class="skill-header">
-                  <span class="skill-name">Supabase</span>
-                  <span class="skill-tag">Backend</span>
-                </div>
-                <p class="skill-note">PostgreSQL relational database, authentication, and real-time backend engine.</p>
-              </li>
-              <li class="skill-item">
-                <div class="skill-header">
-                  <span class="skill-name">Git & GitHub</span>
-                  <span class="skill-tag">Version Control</span>
-                </div>
-                <p class="skill-note">Repository management, atomic branching, pull requests, and commit tracking.</p>
-              </li>
-              <li class="skill-item">
-                <div class="skill-header">
-                  <span class="skill-name">VS Code</span>
-                  <span class="skill-tag">Environment</span>
-                </div>
-                <p class="skill-note">Primary editor setup with linting, formatting, debugging, and terminal workflows.</p>
-              </li>
-              <li class="skill-item">
-                <div class="skill-header">
-                  <span class="skill-name">Vite</span>
-                  <span class="skill-tag">Build Tool</span>
-                </div>
-                <p class="skill-note">Modern bundling, lightning-fast development server, and optimized production builds.</p>
-              </li>
-            </ul>
+            <h3 class="scc-title">Tools & Backend</h3>
+            <div class="scc-skills">
+              <div class="skill-pill">
+                <span class="sp-icon db-icon">SB</span>
+                <span class="sp-label">Supabase</span>
+                <span class="sp-badge">Backend</span>
+              </div>
+              <div class="skill-pill">
+                <span class="sp-icon gt-icon">Git</span>
+                <span class="sp-label">Git & GitHub</span>
+                <span class="sp-badge">VCS</span>
+              </div>
+              <div class="skill-pill">
+                <span class="sp-icon vt-icon">⚡</span>
+                <span class="sp-label">Vite</span>
+                <span class="sp-badge">Bundler</span>
+              </div>
+              <div class="skill-pill">
+                <span class="sp-icon vs-icon">VS</span>
+                <span class="sp-label">VS Code</span>
+                <span class="sp-badge">Editor</span>
+              </div>
+            </div>
+            <div class="scc-glow" aria-hidden="true"></div>
           </div>
 
         </div>
@@ -577,260 +500,251 @@
       </div>
     </section>
 
-    <!-- =======================================================================
-         FEATURED PROJECTS SECTION
-         ======================================================================= -->
+    <!-- ─────────────────────────────────────────────────────────────
+         PROJECTS
+    ───────────────────────────────────────────────────────────────── -->
     <section id="projects" class="section projects-section">
       <div class="container">
-        
-        <!-- Section Header -->
-        <div class="section-header">
-          <span class="section-tag">PORTFOLIO</span>
-          <h2 class="section-title">Featured Projects</h2>
-          <p class="section-subtitle">
-            Highlighting real-world applications and dedicated project workspaces.
-          </p>
+
+        <div class="section-label">
+          <span class="sl-line"></span>
+          <span class="sl-tag">/ featured projects</span>
         </div>
+        <h2 class="section-h">Things I've <span class="gradient-text">Built</span></h2>
 
         <div class="projects-grid">
-          
-          <!-- PROJECT 1: RapidReach (Main Flagship Project) -->
-          <article class="project-card flagship-project">
-            <!-- Visual Header: Pure CSS Emergency Radar Graphic -->
-            <div class="project-visual-box visual-radar" aria-hidden="true">
-              <div class="radar-circle circle-1"></div>
-              <div class="radar-circle circle-2"></div>
-              <div class="radar-circle circle-3"></div>
-              <div class="radar-sweep"></div>
-              <div class="radar-beacon">
-                <span class="beacon-dot"></span>
-                <span class="beacon-wave"></span>
+
+          <!-- ── RapidReach ──────────────────── -->
+          <article class="proj-card proj-featured">
+
+            <!-- Visual header: Radar/SOS animation -->
+            <div class="proj-visual pv-rapidreach" aria-hidden="true">
+
+              <!-- Radar rings -->
+              <div class="rr-ring rr-r1"></div>
+              <div class="rr-ring rr-r2"></div>
+              <div class="rr-ring rr-r3"></div>
+
+              <!-- Sweep arm -->
+              <div class="rr-sweep-mask">
+                <div class="rr-sweep"></div>
               </div>
-              <div class="visual-badge">PUBLIC SAFETY // SOS</div>
+
+              <!-- Center beacon -->
+              <div class="rr-center">
+                <div class="rr-pulse rr-p1"></div>
+                <div class="rr-pulse rr-p2"></div>
+                <div class="rr-dot"></div>
+              </div>
+
+              <!-- Blip dots -->
+              <div class="rr-blip blip-a"></div>
+              <div class="rr-blip blip-b"></div>
+
+              <!-- Grid lines -->
+              <div class="rr-crosshair rr-ch-h"></div>
+              <div class="rr-crosshair rr-ch-v"></div>
+
+              <div class="pv-chip">EMERGENCY · SOS</div>
+
+              <!-- Corner brackets -->
+              <span class="pv-corner c-tl"></span>
+              <span class="pv-corner c-tr"></span>
             </div>
 
-            <!-- Card Content -->
-            <div class="project-content">
-              <div class="project-meta-row">
-                <span class="project-badge badge-primary">Core Project</span>
-                <span class="project-status">In Active Development</span>
+            <div class="proj-body">
+              <div class="proj-top">
+                <div class="proj-tags">
+                  <span class="ptag ptag-featured">⭐ Flagship</span>
+                  <span class="ptag ptag-wip">In Development</span>
+                </div>
+                <a href="#projects" class="proj-ext-link" aria-label="Project link placeholder" title="Link available once deployed">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
               </div>
-
-              <h3 class="project-title">RapidReach</h3>
-              <p class="project-tagline">Emergency Assistance & Rapid SOS Response Platform</p>
-
-              <p class="project-description">
-                A public-safety application focused on emergency assistance and SOS functionality. Engineered to facilitate rapid communication, alert transmission, and coordination during critical situations when immediate assistance is required.
+              <h3 class="proj-title">RapidReach</h3>
+              <p class="proj-subtitle">Public-Safety · Emergency Assistance Platform</p>
+              <p class="proj-desc">
+                A public-safety application focused on emergency assistance and SOS functionality — enabling rapid communication, alert dispatch, and emergency coordination when every second counts.
               </p>
-
-              <!-- Tech Stack Tags -->
-              <div class="tech-tags">
-                <span class="tag">React</span>
-                <span class="tag">Vite</span>
-                <span class="tag">TypeScript</span>
-                <span class="tag">Supabase</span>
+              <div class="proj-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Vite</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Supabase</span>
               </div>
-
-              <!-- Project Links -->
-              <div class="project-actions">
-                <!-- Replace with your actual repository URL when available -->
-                <a href="https://github.com/your-username/RapidReach" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-                  </svg>
-                  <span>GitHub Repo [Configure URL]</span>
+              <div class="proj-actions">
+                <!-- ⚠ Replace with your actual repo URL -->
+                <a href="https://github.com/your-username/RapidReach" target="_blank" rel="noopener noreferrer" class="proj-btn pb-outline">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  GitHub Repo
                 </a>
-                
-                <!-- Live Demo placeholder link -->
-                <a href="#projects" class="btn btn-outline btn-disabled" title="Live demo URL will be enabled once deployed">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <circle cx="12" cy="12" r="10"/>
-                    <line x1="2" y1="12" x2="22" y2="12"/>
-                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-                  </svg>
-                  <span>Live Demo [Pending Deploy]</span>
-                </a>
+                <span class="proj-btn pb-disabled" title="Demo pending deployment">Live Demo · Pending</span>
               </div>
             </div>
           </article>
 
-          <!-- PROJECT 2: Hackathon Project (Editable Placeholder) -->
-          <article class="project-card">
-            <!-- Visual Header: Pure CSS Terminal Sprint Graphic -->
-            <div class="project-visual-box visual-hackathon" aria-hidden="true">
-              <div class="terminal-bar">
-                <span class="term-dot"></span>
-                <span class="term-dot"></span>
-                <span class="term-dot"></span>
+          <!-- ── Hackathon Projects ───────────── -->
+          <article class="proj-card">
+            <div class="proj-visual pv-hackathon" aria-hidden="true">
+
+              <!-- Terminal animation -->
+              <div class="hack-terminal">
+                <div class="hack-bar">
+                  <span class="hd r"></span><span class="hd a"></span><span class="hd g"></span>
+                </div>
+                <div class="hack-code">
+                  <span class="hc-line"><span class="hc-prompt">$</span> git clone challenge</span>
+                  <span class="hc-line"><span class="hc-prompt">$</span> npm run prototype</span>
+                  <span class="hc-line"><span class="hc-prompt">$</span> deploy --rapid</span>
+                  <span class="hc-line hc-ok"><span class="hc-prompt">✓</span> shipped in 24h</span>
+                </div>
               </div>
-              <div class="terminal-code">
-                <span class="code-line">&gt; git clone sprint-project</span>
-                <span class="code-line">&gt; build --hackathon --rapid</span>
-                <span class="code-line text-accent">&gt; status: prototype_ready</span>
-              </div>
-              <div class="visual-badge">HACKATHON // SPRINT</div>
+
+              <div class="pv-chip">HACKATHON · SPRINT</div>
+              <span class="pv-corner c-tl"></span>
+              <span class="pv-corner c-tr"></span>
             </div>
-
-            <!-- Card Content -->
-            <div class="project-content">
-              <div class="project-meta-row">
-                <span class="project-badge badge-neutral">Hackathon Work</span>
-                <span class="project-status">Configurable Slot</span>
+            <div class="proj-body">
+              <div class="proj-top">
+                <div class="proj-tags">
+                  <span class="ptag">Competitive</span>
+                  <span class="ptag ptag-placeholder">Placeholder</span>
+                </div>
               </div>
-
-              <h3 class="project-title">Hackathon Projects [Placeholder]</h3>
-              <p class="project-tagline">Collaborative Problem-Solving & Rapid Prototyping</p>
-
-              <p class="project-description">
-                Dedicated space for competitive hackathon entries. Ready to be updated with your specific challenge statement, solution architecture, team contributions, and repository details upon completion.
+              <h3 class="proj-title">Hackathon Projects</h3>
+              <p class="proj-subtitle">Rapid Prototyping · Team Collaboration</p>
+              <p class="proj-desc">
+                Space reserved for competitive hackathon entries. Update with the challenge statement, solution, and repository once a submission is finalised.
               </p>
-
-              <!-- Tech Stack Tags -->
-              <div class="tech-tags">
-                <span class="tag">Problem-Solving</span>
-                <span class="tag">Rapid Prototyping</span>
-                <span class="tag">Team Collaboration</span>
+              <div class="proj-tech">
+                <span class="tech-tag">Problem Solving</span>
+                <span class="tech-tag">Rapid Build</span>
+                <span class="tech-tag">Teamwork</span>
               </div>
-
-              <!-- Project Links -->
-              <div class="project-actions">
-                <a href="https://github.com/your-username" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-                  </svg>
-                  <span>Repository [Placeholder]</span>
-                </a>
+              <div class="proj-actions">
+                <!-- ⚠ Replace with actual repo when available -->
+                <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="proj-btn pb-outline">GitHub [Placeholder]</a>
               </div>
             </div>
           </article>
 
-          <!-- PROJECT 3: AI/ML Experiments (Editable Placeholder) -->
-          <article class="project-card">
-            <!-- Visual Header: Pure CSS Data Matrix / Tensor Graphic -->
-            <div class="project-visual-box visual-aiml" aria-hidden="true">
-              <div class="tensor-grid">
-                <span class="tensor-cell c1">0.82</span>
-                <span class="tensor-cell c2">0.94</span>
-                <span class="tensor-cell c3">0.17</span>
-                <span class="tensor-cell c4">0.63</span>
-                <span class="tensor-cell c5">0.88</span>
-                <span class="tensor-cell c6">0.45</span>
+          <!-- ── AI/ML Experiments ───────────── -->
+          <article class="proj-card">
+            <div class="proj-visual pv-aiml" aria-hidden="true">
+
+              <!-- Tensor / data grid animation -->
+              <div class="tensor-wrap">
+                <div class="tensor-grid">
+                  <span class="tc a1">0.91</span><span class="tc a2">0.37</span><span class="tc a3">0.84</span>
+                  <span class="tc b1">0.12</span><span class="tc b2">0.76</span><span class="tc b3">0.55</span>
+                  <span class="tc c1">0.63</span><span class="tc c2">0.29</span><span class="tc c3">0.98</span>
+                </div>
+                <div class="tensor-label">model.predict()</div>
               </div>
-              <div class="visual-badge">AI/ML // EXPERIMENTS</div>
+
+              <div class="pv-chip">AI/ML · EXPERIMENTS</div>
+              <span class="pv-corner c-tl"></span>
+              <span class="pv-corner c-tr"></span>
             </div>
-
-            <!-- Card Content -->
-            <div class="project-content">
-              <div class="project-meta-row">
-                <span class="project-badge badge-neutral">Research & Labs</span>
-                <span class="project-status">Workspace</span>
+            <div class="proj-body">
+              <div class="proj-top">
+                <div class="proj-tags">
+                  <span class="ptag">Research</span>
+                  <span class="ptag ptag-placeholder">Workspace</span>
+                </div>
               </div>
-
-              <h3 class="project-title">AI & ML Experiments [Placeholder]</h3>
-              <p class="project-tagline">Machine Learning Models, Data Science & Intelligent Tools</p>
-
-              <p class="project-description">
-                A structured space for future Python machine-learning experiments, exploratory data analysis notebooks, predictive pipelines, and applied algorithmic tools as they are researched and developed.
+              <h3 class="proj-title">AI/ML Experiments</h3>
+              <p class="proj-subtitle">Machine Learning · Data Science · Python</p>
+              <p class="proj-desc">
+                A growing lab of Python notebooks, ML model experiments, and applied data science scripts. Updated as projects are developed and documented.
               </p>
-
-              <!-- Tech Stack Tags -->
-              <div class="tech-tags">
-                <span class="tag">Python</span>
-                <span class="tag">Machine Learning</span>
-                <span class="tag">Data Analysis</span>
-                <span class="tag">Algorithms</span>
+              <div class="proj-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Machine Learning</span>
+                <span class="tech-tag">Data Analysis</span>
               </div>
-
-              <!-- Project Links -->
-              <div class="project-actions">
-                <a href="https://github.com/your-username" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-                  </svg>
-                  <span>Lab Notebooks [Placeholder]</span>
-                </a>
+              <div class="proj-actions">
+                <!-- ⚠ Replace with actual notebooks when available -->
+                <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="proj-btn pb-outline">Labs [Placeholder]</a>
               </div>
             </div>
           </article>
 
         </div>
-
       </div>
     </section>
 
-    <!-- =======================================================================
-         EXPERIENCE & LEADERSHIP SECTION
-         ======================================================================= -->
+    <!-- ─────────────────────────────────────────────────────────────
+         EXPERIENCE / JOURNEY
+    ───────────────────────────────────────────────────────────────── -->
     <section id="experience" class="section experience-section">
       <div class="container">
-        
-        <!-- Section Header -->
-        <div class="section-header">
-          <span class="section-tag">LEADERSHIP & INVOLVEMENT</span>
-          <h2 class="section-title">Experience & Leadership</h2>
-          <p class="section-subtitle">
-            Community representation, collaborative initiatives, and continuous skill building.
-          </p>
-        </div>
 
-        <!-- Vertical Timeline (Pure CSS) -->
+        <div class="section-label">
+          <span class="sl-line"></span>
+          <span class="sl-tag">/ journey</span>
+        </div>
+        <h2 class="section-h">Leadership &amp; Experience</h2>
+
         <div class="timeline">
-          
-          <!-- Timeline Entry 1: IIT Bombay Techfest Campus Ambassador -->
-          <div class="timeline-item">
-            <div class="timeline-marker" aria-hidden="true">
-              <span class="marker-dot"></span>
-            </div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="timeline-role">Campus Ambassador</h3>
-                  <h4 class="timeline-org">IIT Bombay Techfest</h4>
-                </div>
-                <span class="timeline-period">2026–27</span>
+
+          <div class="tl-item">
+            <div class="tl-left">
+              <div class="tl-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               </div>
-              <p class="timeline-desc">
-                Serving as the official Campus Ambassador for IIT Bombay Techfest, representing Asia's largest annual science and technology festival across NST ADYPU.
+              <div class="tl-pipe"></div>
+            </div>
+            <div class="tl-card">
+              <div class="tl-card-glow"></div>
+              <div class="tl-meta">
+                <span class="tl-org">IIT Bombay Techfest</span>
+                <span class="tl-period">2026–27</span>
+              </div>
+              <h3 class="tl-role">Campus Ambassador</h3>
+              <p class="tl-desc">
+                Representing Asia's largest science and technology festival at NST ADYPU — driving campus awareness, student engagement, and participation in national-level tech competitions and workshops.
               </p>
-              <ul class="timeline-points">
-                <li>Leading campus outreach initiatives to raise awareness for national-level technology competitions, hackathons, and workshops.</li>
-                <li>Engaging the student engineering community, encouraging cross-disciplinary participation in emerging tech challenges.</li>
-                <li>Facilitating communications between the Techfest organizing committee and student developer groups.</li>
+              <ul class="tl-bullets">
+                <li>Coordinating campus outreach and awareness for Techfest events and hackathons.</li>
+                <li>Bridging communications between the Techfest committee and NST student community.</li>
+                <li>Encouraging cross-disciplinary engagement with emerging technology challenges.</li>
               </ul>
-              <div class="timeline-tags">
-                <span class="tag">Leadership</span>
-                <span class="tag">Campus Outreach</span>
-                <span class="tag">Student Engagement</span>
-                <span class="tag">Tech Promotion</span>
+              <div class="tl-tags">
+                <span class="tech-tag">Leadership</span>
+                <span class="tech-tag">Campus Outreach</span>
+                <span class="tech-tag">Tech Promotion</span>
               </div>
             </div>
           </div>
 
-          <!-- Timeline Entry 2: Hackathons & Technical Projects -->
-          <div class="timeline-item">
-            <div class="timeline-marker" aria-hidden="true">
-              <span class="marker-dot"></span>
-            </div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="timeline-role">Hackathons & Technical Projects</h3>
-                  <h4 class="timeline-org">Developer Sprints & Collaborative Builds</h4>
-                </div>
-                <span class="timeline-period">Active</span>
+          <div class="tl-item">
+            <div class="tl-left">
+              <div class="tl-icon tl-icon-alt">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
               </div>
-              <p class="timeline-desc">
-                Actively engaging in hands-on hackathons and project sprints, focusing on building practical software solutions under tight timeframes.
+              <div class="tl-pipe"></div>
+            </div>
+            <div class="tl-card">
+              <div class="tl-card-glow"></div>
+              <div class="tl-meta">
+                <span class="tl-org">Hackathons & Project Sprints</span>
+                <span class="tl-period">Active</span>
+              </div>
+              <h3 class="tl-role">Developer & Problem Solver</h3>
+              <p class="tl-desc">
+                Actively participating in competitive hackathons and collaborative development sprints, translating problem statements into functional prototypes under tight time constraints.
               </p>
-              <ul class="timeline-points">
-                <li>Collaborating with peer developers to break down complex problem statements into functional project architectures.</li>
-                <li>Developing prototypes rapidly with emphasis on UI clarity, essential core features, and dependable data handling.</li>
-                <li>Strengthening adaptability, team communication, and presentation of technical ideas to review panels.</li>
+              <ul class="tl-bullets">
+                <li>Decomposing complex challenges into actionable engineering tasks.</li>
+                <li>Collaborating with peers on full-stack solution design and rapid prototyping.</li>
+                <li>Strengthening communication skills through technical presentations to panels.</li>
               </ul>
-              <div class="timeline-tags">
-                <span class="tag">Teamwork</span>
-                <span class="tag">Rapid Prototyping</span>
-                <span class="tag">Problem Solving</span>
+              <div class="tl-tags">
+                <span class="tech-tag">Prototyping</span>
+                <span class="tech-tag">Teamwork</span>
+                <span class="tech-tag">Problem Solving</span>
               </div>
             </div>
           </div>
@@ -840,81 +754,54 @@
       </div>
     </section>
 
-    <!-- =======================================================================
-         ACHIEVEMENTS & LEARNING MILESTONES
-         ======================================================================= -->
+    <!-- ─────────────────────────────────────────────────────────────
+         ACHIEVEMENTS
+    ───────────────────────────────────────────────────────────────── -->
     <section id="achievements" class="section achievements-section">
       <div class="container">
-        
-        <!-- Section Header -->
-        <div class="section-header">
-          <span class="section-tag">PROGRESSION</span>
-          <h2 class="section-title">Achievements & Learning Milestones</h2>
-          <p class="section-subtitle">
-            Verified milestones, leadership appointments, and verified academic development.
-          </p>
+
+        <div class="section-label">
+          <span class="sl-line"></span>
+          <span class="sl-tag">/ milestones</span>
         </div>
+        <h2 class="section-h">Achievements &amp; Milestones</h2>
 
-        <div class="achievements-grid">
-          
-          <!-- Achievement Card 1 -->
-          <div class="achievement-card">
-            <div class="achievement-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-              </svg>
+        <div class="ach-grid">
+
+          <div class="ach-card">
+            <div class="ach-icon-bg">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
             </div>
-            <h3 class="achievement-title">Techfest Ambassador Selection</h3>
-            <p class="achievement-date">Tenure: 2026–27</p>
-            <p class="achievement-desc">
-              Selected to represent IIT Bombay Techfest at NST ADYPU, fostering campus participation in technological innovation and competitions.
-            </p>
+            <h3 class="ach-title">Techfest Ambassador Selection</h3>
+            <p class="ach-when">2026–27</p>
+            <p class="ach-desc">Selected to represent IIT Bombay Techfest — Asia's largest tech festival — at NST ADYPU.</p>
           </div>
 
-          <!-- Achievement Card 2 -->
-          <div class="achievement-card">
-            <div class="achievement-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                <polyline points="22 4 12 14.01 9 11.01"/>
-              </svg>
+          <div class="ach-card">
+            <div class="ach-icon-bg" style="--ach-c: #34d399;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
             </div>
-            <h3 class="achievement-title">RapidReach Core Architecture</h3>
-            <p class="achievement-date">Project Milestone</p>
-            <p class="achievement-desc">
-              Engineered the initial emergency assistance prototype with React, Vite, TypeScript, and Supabase integration for rapid SOS response.
-            </p>
+            <h3 class="ach-title">RapidReach Core Architecture</h3>
+            <p class="ach-when">Project Milestone</p>
+            <p class="ach-desc">Engineered the foundational emergency-assistance prototype using React, Vite, TypeScript, and Supabase.</p>
           </div>
 
-          <!-- Achievement Card 3 -->
-          <div class="achievement-card">
-            <div class="achievement-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
-                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
-              </svg>
+          <div class="ach-card">
+            <div class="ach-icon-bg" style="--ach-c: #a78bfa;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
             </div>
-            <h3 class="achievement-title">AI/ML Foundation Studies</h3>
-            <p class="achievement-date">Continuous Track</p>
-            <p class="achievement-desc">
-              Systematically advancing coursework in machine learning fundamentals, algorithm design, and Python-based data pipelines.
-            </p>
+            <h3 class="ach-title">AI/ML Coursework Progress</h3>
+            <p class="ach-when">Continuous</p>
+            <p class="ach-desc">Systematically building proficiency in machine-learning fundamentals, algorithm design, and Python-based data pipelines.</p>
           </div>
 
-          <!-- Achievement Card 4: Placeholder for future verified additions -->
-          <div class="achievement-card placeholder-card">
-            <div class="achievement-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"/>
-                <line x1="12" y1="8" x2="12" y2="16"/>
-                <line x1="8" y1="12" x2="16" y2="12"/>
-              </svg>
+          <div class="ach-card ach-placeholder">
+            <div class="ach-icon-bg" style="--ach-c: #64748b;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
             </div>
-            <h3 class="achievement-title">Future Milestones [Placeholder]</h3>
-            <p class="achievement-date">Configurable</p>
-            <p class="achievement-desc">
-              Reserved for upcoming hackathon results, technical certifications, and formal competitive programming recognitions as they are achieved.
-            </p>
+            <h3 class="ach-title">Future Milestones</h3>
+            <p class="ach-when">Configurable</p>
+            <p class="ach-desc">Reserved for upcoming hackathon results, certifications, and technical recognitions as they are achieved.</p>
           </div>
 
         </div>
@@ -922,119 +809,84 @@
       </div>
     </section>
 
-    <!-- =======================================================================
-         CONTACT SECTION
-         ======================================================================= -->
+    <!-- ─────────────────────────────────────────────────────────────
+         CONTACT
+    ───────────────────────────────────────────────────────────────── -->
     <section id="contact" class="section contact-section">
       <div class="container">
-        
-        <!-- Section Header -->
-        <div class="section-header">
-          <span class="section-tag">LET'S CONNECT</span>
-          <h2 class="section-title">Get In Touch</h2>
-          <p class="section-subtitle">
-            Open to discussing AI/ML ideas, hackathon collaborations, and exciting development opportunities.
-          </p>
+
+        <div class="section-label">
+          <span class="sl-line"></span>
+          <span class="sl-tag">/ contact</span>
         </div>
+        <h2 class="section-h">Let's Build Something <span class="gradient-text">Together</span></h2>
+        <p class="contact-lead">
+          Open to hackathon collaborations, AI project discussions, campus events, and general tech conversation. Don't hesitate — say hello!
+        </p>
 
-        <div class="contact-layout">
-          
-          <!-- Contact Introduction Box -->
-          <div class="contact-info-card">
-            <h3 class="contact-card-title">Let's Build Something Meaningful</h3>
-            <p class="contact-card-text">
-              Whether you are looking for a dedicated teammate for an upcoming hackathon, want to discuss an intelligent application, or simply wish to exchange ideas on emerging technology, I'd love to connect with you.
-            </p>
+        <div class="contact-grid">
 
-            <div class="contact-channels">
-              
-              <!-- Email Channel -->
-              <a href="mailto:your.email@example.com?subject=Collaboration%20Inquiry%20from%20Portfolio" class="contact-channel-item">
-                <div class="channel-icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect width="20" height="16" x="2" y="4" rx="2"/>
-                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-                  </svg>
-                </div>
-                <div class="channel-details">
-                  <span class="channel-name">Direct Email</span>
-                  <!-- Replace placeholder with your real email address -->
-                  <span class="channel-value">your.email@example.com [Click to Send]</span>
-                </div>
-              </a>
+          <!-- Channels -->
+          <div class="contact-channels">
 
-              <!-- LinkedIn Channel -->
-              <a href="https://linkedin.com/in/your-profile" class="contact-channel-item" target="_blank" rel="noopener noreferrer">
-                <div class="channel-icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                    <rect x="2" y="9" width="4" height="12"/>
-                    <circle cx="4" cy="4" r="2"/>
-                  </svg>
-                </div>
-                <div class="channel-details">
-                  <span class="channel-name">LinkedIn</span>
-                  <!-- Replace placeholder with your real LinkedIn handle -->
-                  <span class="channel-value">linkedin.com/in/your-profile [Placeholder]</span>
-                </div>
-              </a>
+            <!-- ⚠ Replace placeholders with your real info -->
+            <a href="mailto:your.email@example.com?subject=Hey%20Rudra!" class="cc-item">
+              <div class="cc-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div class="cc-info">
+                <span class="cc-label">Email</span>
+                <span class="cc-value">your.email@example.com <span class="cc-placeholder">[Replace]</span></span>
+              </div>
+              <svg class="cc-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
 
-              <!-- GitHub Channel -->
-              <a href="https://github.com/your-username" class="contact-channel-item" target="_blank" rel="noopener noreferrer">
-                <div class="channel-icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-                  </svg>
-                </div>
-                <div class="channel-details">
-                  <span class="channel-name">GitHub</span>
-                  <!-- Replace placeholder with your real GitHub handle -->
-                  <span class="channel-value">github.com/your-username [Placeholder]</span>
-                </div>
-              </a>
+            <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" class="cc-item">
+              <div class="cc-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <div class="cc-info">
+                <span class="cc-label">LinkedIn</span>
+                <span class="cc-value">linkedin.com/in/your-profile <span class="cc-placeholder">[Replace]</span></span>
+              </div>
+              <svg class="cc-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
 
-            </div>
+            <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="cc-item">
+              <div class="cc-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </div>
+              <div class="cc-info">
+                <span class="cc-label">GitHub</span>
+                <span class="cc-value">github.com/your-username <span class="cc-placeholder">[Replace]</span></span>
+              </div>
+              <svg class="cc-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+
           </div>
 
-          <!-- Direct Outreach Action Box -->
-          <div class="contact-action-card">
-            <div class="action-card-header">
-              <span class="badge-accent">Direct Reach</span>
-              <h3 class="action-card-title">Start a Conversation</h3>
-              <p class="action-card-desc">
-                Click below to launch your default email client with a pre-formatted message subject directly addressed to me.
-              </p>
-            </div>
-
-            <div class="direct-email-box">
-              <div class="email-preview">
-                <div class="preview-field">
-                  <span class="preview-label">To:</span>
-                  <span class="preview-text">your.email@example.com</span>
+          <!-- CTA card -->
+          <div class="contact-cta-card">
+            <div class="cta-card-inner">
+              <div class="cta-card-glow"></div>
+              <div class="cta-top">
+                <div class="cta-avatar">
+                  <span>RT</span>
                 </div>
-                <div class="preview-field">
-                  <span class="preview-label">Subject:</span>
-                  <span class="preview-text">Collaboration / Hackathon Inquiry</span>
+                <div>
+                  <p class="cta-name">Rudra Harikesh Tiwari</p>
+                  <p class="cta-status"><span class="cta-dot"></span> Open to connect</p>
                 </div>
               </div>
-
-              <!-- Functional mailto link with preset inquiry text -->
-              <a href="mailto:your.email@example.com?subject=Collaboration%20Inquiry%20-%20Rudra%20Tiwari&body=Hi%20Rudra,%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect%20regarding...%0D%0A%0D%0ABest%20regards," class="btn btn-primary btn-block">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <line x1="22" y1="2" x2="11" y2="13"/>
-                  <polygon points="22 2 15 22 11 13 2 9 22 2"/>
-                </svg>
-                <span>Launch Email Client</span>
-              </a>
-
-              <p class="email-transparency-note">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <circle cx="12" cy="12" r="10"/>
-                  <line x1="12" y1="16" x2="12" y2="12"/>
-                  <line x1="12" y1="8" x2="12.01" y2="8"/>
-                </svg>
-                <span>Direct link via standard mailto protocol. No third-party data tracking or simulated backend submissions.</span>
+              <p class="cta-message">
+                "Whether you're a fellow developer, a hackathon organizer, or someone with an idea that needs building — I'd love to hear from you."
               </p>
+              <a href="mailto:your.email@example.com?subject=Collaboration%20Inquiry%20from%20Portfolio&body=Hi%20Rudra,%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20would%20love%20to%20connect%20regarding..." class="btn btn-primary btn-full">
+                <span class="btn-bg"></span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                Send a Message
+              </a>
+              <p class="cta-note">Opens your default email client. No backend. No data captured.</p>
             </div>
           </div>
 
@@ -1045,59 +897,37 @@
 
   </main>
 
-  <!-- =========================================================================
+  <!-- ═══════════════════════════════════════════════════════════════
        FOOTER
-       ========================================================================= -->
+  ═══════════════════════════════════════════════════════════════════ -->
   <footer class="site-footer">
-    <div class="container footer-container">
-      
+    <div class="container footer-inner">
+
       <div class="footer-top">
-        <!-- Wordmark & Tagline -->
         <div class="footer-brand">
-          <a href="#hero" class="footer-logo">
-            <span class="brand-monogram">RT</span>
-            <span class="brand-name">Rudra Harikesh Tiwari</span>
-          </a>
-          <p class="footer-tagline">
-            AI/ML Student • Aspiring AI Engineer • Developer • Campus Ambassador for IIT Bombay Techfest 2026–27
-          </p>
+          <div class="brand-logo">
+            <span class="logo-letter">R</span>
+            <span class="logo-letter">T</span>
+          </div>
+          <div>
+            <p class="footer-name">Rudra Harikesh Tiwari</p>
+            <p class="footer-tagline">AI/ML Student · Developer · Techfest Ambassador '26–'27</p>
+          </div>
         </div>
-
-        <!-- Quick Navigation -->
-        <div class="footer-nav">
-          <h4 class="footer-nav-title">Navigation</h4>
-          <ul class="footer-links">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#achievements">Milestones</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-
-        <!-- External Profiles -->
-        <div class="footer-socials">
-          <h4 class="footer-nav-title">Profiles</h4>
-          <ul class="footer-links">
-            <li><a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">GitHub [Placeholder]</a></li>
-            <li><a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">LinkedIn [Placeholder]</a></li>
-            <li><a href="mailto:your.email@example.com">Email [Placeholder]</a></li>
-          </ul>
-        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Journey</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </div>
 
-      <!-- Footer Bottom Bar -->
       <div class="footer-bottom">
-        <p class="copyright-text">
-          &copy; 2026 Rudra Harikesh Tiwari. Built with pure HTML5 &amp; CSS3. All rights reserved.
-        </p>
-        <a href="#hero" class="back-to-top" aria-label="Back to top of page">
-          <span>Back to Top</span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <polyline points="18 15 12 9 6 15"/>
-          </svg>
+        <p class="footer-copy">© 2026 Rudra Harikesh Tiwari · Built with pure HTML5 &amp; CSS3</p>
+        <a href="#hero" class="back-top" aria-label="Back to top">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+          Top
         </a>
       </div>
 
@@ -1106,4 +936,3 @@
 
 </body>
 </html>
-
